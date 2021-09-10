@@ -1,0 +1,132 @@
+h1{
+    color:red;
+    margin-left: 30px;
+}
+body{
+    text-align:center;
+    
+}
+
+
+
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+justify-content: space-evenly;
+}
+
+.header{
+
+background-color: rgb(99, 206, 255);
+
+font-family: cursive;
+font-size: 20px;
+
+display:flex;
+justify-content: space-between;
+}
+
+
+.socialMedia{
+    position:fixed;
+  bottom: 0;
+    width: 100%;
+    display:flex;
+justify-content: right;
+   
+}
+
+.text{
+    font-size: 30px;
+    color: black;
+        
+}
+
+.item{
+    color: black;
+    
+    
+}
+
+
+
+.links{
+padding: 30px;
+
+
+}
+
+.index{
+    margin-right: 20px;
+}
+
+.Information{
+    padding-right: 15px;
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+.Other{
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color:black;
+}
+
+.item{
+    position:relative;
+}
+
+.item p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    opacity:0;
+    transform: translate(-50%,-50%);
+}
+
+.item:hover p{
+    opacity: 1;
+}
+
+.item:hover img{
+    opacity: 0.33;
+}
+
+
+
+.Insta:hover img{
+    opacity: 0.50;
+}
+
+
+.updates1{
+    font-family:fantasy;
+    background-color: cornflowerblue;
+    font-size: 76px;
+    border:solid;
+    border-left-color:rgb(99, 206, 255);
+    border-right-color:rgb(99, 206, 255);
+    border-top-color: red;
+    border-bottom-color: red;
+    
+}
+
+.updates{
+    font-family:tahoma;
+    background-color: cornflowerblue;
+    font-size: 30px;
+    border:solid;
+    border-left-color:rgb(99, 206, 255);
+    border-right-color:rgb(99, 206, 255);
+    border-top-color: red;
+    border-bottom-color: red;
+    
+}

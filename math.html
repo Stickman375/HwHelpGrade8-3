@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="math.css">
+    <title>Math</title>
+    <a href="index.html" class="Information">Back to main page</a>
+    <center>
+    
+    </center>
+
+</head>
+
+
+<body>
+
+
+    <!doctype html>
+    <html
+        data-ym-color="var(--text-color)"
+        data-ym-font-family="var(--font-family-sans-serif)@media screen"
+        data-ym-font-size="x-large@media screen and (max-width: 767px) || xx-large@media screen and (min-width: 768px)"
+        data-ym-font-weight="var(--regular)"
+        data-ym-line-height="var(--scale)"
+        data-ym-margin="auto"
+        data-ym-max-width="480px@media screen and (min-width: 480px)"
+        data-ym-width="95%"
+        lang="en"
+    >
+    <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The calculator uses the Css calc() function to solve the four basic arithmetic operations.">
+    <meta name="keywords" content="CSS calc(), Css, JavaScript">
+    <meta name="author" content="Vincent Top-Roulet">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGZpbGw9IiNGNDQzMzYiPjxwYXRoIGQ9Ik0xOSwxMEg1VjhIMTlWMTBNMTksMTZINVYxNEgxOVYxNloiIC8+PC9zdmc+">
+    <title>Calculator</title>
+    </head>
+    <body 
+        data-ym-display="grid"
+        data-ym-margin="auto"
+        data-ym-padding-block-end="calc(var(--sss) * 1rem)"
+        data-ym-padding-block-start="calc(var(--sss) * 1rem)"
+    >
+    <div
+        data-ym-border="calc(var(--sssssss) * 1rem) solid var(--dark-primary-color)"
+        data-ym-display="block" 
+        data-ym-padding="calc(var(--sss) * 1rem)"
+    >
+        <h1
+            data-ym-color="var(--text-color)"
+            data-ym-display="block"
+            data-ym-font-size="calc(var(--xs) * 1rem)"
+            data-ym-hyphens="auto"
+        >
+            <span data-ym-color="var(--accent-color)">Fun</span> <span data-ym-text-decoration="line-through var(--accent-color) solid && [data-js-title-active]" data-js-title>Nice</span> Calculator <a href="https://drafts.csswg.org/css-values-3/#calc-notation" title="Link to CSS Values and Units Module Level 3 Mathematical §Expressions: calc() (Open in a new window)" target="_blank" data-ym-color="var(--text-color):link || var(--text-color):visited || var(--text-color):focus || var(--text-color):hover || var(--text-color):active"><span data-ym-font-variant="small-caps"></span> </a>
+        </h1>
+    </div>
+    <form data-form>
+        <input 
+            data-ym-background-color="var(--dark-primary-color)"
+            data-ym-margin-block-start="calc(var(--s) * 1rem)"
+            data-ym-color="var(--text-icons-color) || var(--text-icons-color)::placeholder"
+            data-ym-display="block"
+            data-ym-width="100%"
+            name="formula"
+            readonly
+            placeholder="Press buttons, e.g. 1 ÷ 3…"
+        >
+        <div 
+            data-ym-margin-block-start="calc(var(--s) * 1rem)"
+            data-ym-display="grid"
+            data-ym-grid-gap="1ch"
+            data-ym-grid-template-columns="repeat(4, calc(calc(100% - 3ch) / 4))"
+            data-ym-grid-template-rows="repeat(6, calc(var(--xs) * 1rem))"
+        >
+            <button 
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)" 
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="1"
+                data-ym-grid-row="1"
+                data-ym-text-align="center"
+                data-number
+                value="1"
+            >
+                1
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="2"
+                data-ym-grid-row="1"
+                data-ym-text-align="center"
+                data-number
+                value="2"
+            >
+                2
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="3"
+                data-ym-grid-row="1"
+                data-ym-text-align="center"
+                data-number
+                value="3"
+            >
+                3
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="1"
+                data-ym-grid-row="2"
+                data-ym-text-align="center"
+                data-number
+                value="4"
+            >
+            4
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="2"
+                data-ym-grid-row="2"
+                data-ym-text-align="center"
+                data-number
+                value="5"
+            >
+                5
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="3"
+                data-ym-grid-row="2"
+                data-ym-text-align="center"
+                data-number
+                value="6"
+            >
+                6
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="1"
+                data-ym-grid-row="3"
+                data-ym-text-align="center"
+                data-number
+                value="7"
+            >
+                7
+            </button>
+            <button 
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="2"
+                data-ym-grid-row="3"
+                data-ym-text-align="center"
+                data-number
+                value="8"
+            >
+                8
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="3"
+                data-ym-grid-row="3"
+                data-ym-text-align="center"
+                data-number
+                value="9"
+            >
+                9
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="2"
+                data-ym-grid-row="4"
+                data-ym-text-align="center"
+                data-number
+                value="0"
+            >
+                0
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="4"
+                data-ym-grid-row="5"
+                data-ym-text-align="center"
+                data-period
+                value="."
+            >
+                .
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="4"
+                data-ym-grid-row="1"
+                data-ym-text-align="center"
+                data-operator
+                value="+"
+            >
+                +
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="4"
+                data-ym-grid-row="2"
+                data-ym-text-align="center"
+                data-operator
+                value="-"
+            >
+                −
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="4"
+                data-ym-grid-row="3"
+                data-ym-text-align="center"
+                data-operator
+                value="x"
+            >
+                x
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="4"
+                data-ym-grid-row="4"
+                data-ym-text-align="center"
+                data-operator
+                value="÷"
+            >
+                ÷
+            </button>
+            <button
+                data-ym-background-color="var(--primary-color) || var(--dark-primary-color):hover || var(--dark-primary-color):active"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-grid-column="1"
+                data-ym-grid-row="6"
+                data-ym-text-align="center"
+                data-clear
+            >
+                c
+            </button>
+            <button
+                data-ym-background-color="var(--accent-color)"
+                data-ym-color="var(--text-icons-color)"
+                data-ym-cursor="pointer"
+                data-ym-display="block"
+                data-ym-text-align="center"
+                data-ym-grid-column="3 / span 2"
+                data-ym-grid-row="6"
+                data-compute
+            >
+                =
+            </button>
+        </div>
+    </form>
+    <div
+        data-ym-display="none"
+        data-ym-height="0"
+        data-ym-width="0"
+        data-ym-margin-block-start="var(--dimension)"
+        data-result
+    ></div>
+    <div 
+        data-ym-display="none || block@media screen and (min-width: 1025px) && [data-js-tip-active]"
+        data-ym-bottom="0 && [data-js-tip-active]"
+        data-ym-left="0 && [data-js-tip-active]"
+        data-ym-margin-inline-start="calc(50% + 240px + calc(calc(var(--x) * 1rem))) && [data-js-tip-active]"
+        data-ym-right="0 && [data-js-tip-active]"
+        data-ym-position="fixed && [data-js-tip-active]"
+        data-js-tip
+    >
+        <p
+            data-ym-color="var(--text-color) && [data-js-tip-active]"
+            data-ym-display="block && [data-js-tip-active] && [data-js-tip-active]"
+            data-ym-font-size="calc(var(--ss) * 1rem) && [data-js-tip-active]"
+            data-ym-text-align="right && [data-js-tip-active]"
+            data-ym-padding-block-end="calc(var(--s) * 1rem) && [data-js-tip-active]"
+            data-ym-padding-inline-end="calc(var(--s) * 1rem) && [data-js-tip-active]"
+        >
+            <span data-ym-color="var(--accent-color) && [data-js-tip-active]"></span>
+        </p>
+    </div>
+    <script>
+    const calculator = document.querySelector('input');
+    
+    document.querySelector('[data-clear]').addEventListener('click', event => {
+    
+        calculator.setAttribute('readonly', false);
+    
+        calculator.value = ''
+    
+        calculator.setAttribute('readonly', true);
+    
+        event.preventDefault();
+    
+    });
+    
+    document.querySelector('[data-compute]').addEventListener('click', event => {
+    
+        if (!document.querySelector('[data-js-title]').hasAttribute('data-js-title-active')) {
+    
+            document.querySelector('[data-js-title]').setAttribute('data-js-title-active', '');
+    
+        }
+    
+        if (!document.querySelector('[data-js-tip]').hasAttribute('data-js-tip-active')) {
+    
+            document.querySelector('[data-js-tip]').setAttribute('data-js-tip-active', '');
+            
+            document.querySelector('[data-js-tip] span').setAttribute('data-js-tip-active', '');
+    
+        }
+    
+        let form = document.querySelector('[data-form]');
+    
+        let data = new FormData(form);
+    
+        if (data.get('formula') != '') {
+    
+            let operation = data.get('formula').replace(/x/g, '*').replace(/÷/g, '/');
+    
+            try {
+    
+                eval(operation);
+    
+                document.documentElement.style.setProperty('--dimension', 'calc(calc('+ operation +') * 1px)');
+    
+                let result;
+    
+                try {
+    
+                    result = document.querySelector('[data-result]').computedStyleMap().get('margin-block-start').value;
+    
+                } catch {
+    
+                    result = window.getComputedStyle(document.querySelector('[data-result]')).marginBlockStart.replace('px', '');
+    
+                }
+    
+                calculator.value = result;
+    
+                console.log('%c\u2234', 'color: #455A64; font-size: 4em;');
+                
+                console.log('%cOperation:' + ' ' + operation + '.', 'color: #455A64; font-size: 1.41em');
+    
+                console.log('%cJavascript returns' + ' ' + eval(operation) + '.', 'color: #212121; font-size: 1.41em');
+    
+                console.log('%cCss returns' + ' ' + result + '.', 'color: #212121; font-size: 1.41em');
+    
+            } catch {
+    
+                calculator.value = 'Error';
+    
+            }
+    
+        }
+    
+        event.preventDefault();
+    
+    });
+    
+    document.querySelectorAll('[data-number]').forEach(function(element) {
+    
+        element.addEventListener('click', event => {
+    
+            calculator.setAttribute('readonly', false);
+    
+            calculator.value += element.value;
+    
+            calculator.setAttribute('readonly', true);
+    
+            calculator.focus();
+    
+            calculator.setSelectionRange(calculator.value.length, calculator.value.length, 0);
+    
+            event.preventDefault();
+    
+        });
+    
+    });
+    
+    document.querySelectorAll('[data-operator]').forEach(function(element) {
+    
+        element.addEventListener('click', event => {
+    
+            if (calculator.value.length > 0) {
+    
+                if (calculator.value.slice(-1) !== ' ') {
+    
+                    calculator.setAttribute('readonly', false);
+    
+                    calculator.value += ' ';
+    
+                    calculator.value += element.value;
+    
+                    calculator.value += ' ';
+    
+                    calculator.setAttribute('readonly', true);
+    
+                    calculator.focus();
+    
+                    calculator.setSelectionRange(calculator.value.length, calculator.value.length, 0);
+    
+                }
+    
+            }
+    
+            event.preventDefault();
+    
+        });
+    
+    });
+    
+    document.querySelector('[data-period]').addEventListener('click', event => {
+    
+        if (calculator.value.length > 0) {
+    
+            if (calculator.value.slice(-1) !== '.') {
+    
+                calculator.setAttribute('readonly', false);
+    
+                calculator.value += document.querySelector('[data-period]').value;
+    
+                calculator.setAttribute('readonly', true);
+    
+                calculator.focus();
+    
+                calculator.setSelectionRange(calculator.value.length, calculator.value.length, 0);
+    
+            }
+    
+        }
+    
+        event.preventDefault();
+    
+    });
+    
+    var prefixDataAttributes = 'data-ym-';
+    
+    var reset = 'all';
+    
+    var uncompress = false;
+    
+    var cssBefore = `
+    :root {
+        /* https://www.materialpalette.com/blue-grey/teal */
+        --accent-color: #009688;
+        --dark-primary-color: #455a64;
+        --divider-color: #bdbdbd;
+        --primary-color: #607d8b;
+        --text-color: #212121;
+        --text-icons-color: #ffffff;
+        /* https://www.digitalocean.com/community/tutorials/css-system-font-stack */
+        --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        --font-weight-regular: 400;
+    
+        --scale: calc(10812186007 / 7645370045);
+    
+        --x: calc(var(--scale) * var(--scale)); /* 2 */
+        --xx: calc(var(--x) * var(--scale)); /* 2.82 */
+        --xxx: calc(var(--xx) * var(--scale)); /* 4 */
+        --xxxx: calc(var(--xxx) * var(--scale)); /* 5.65 */
+        --xxxxx: calc(var(--xxxx) * var(--scale)); /* 8 */
+        --xxxxxx: calc(var(--xxxxx) * var(--scale)); /* 11,31 */
+        --xxxxxxx: calc(var(--xxxxxx) * var(--scale)); /* 16 */
+        --xxxxxxxx: calc(var(--xxxxxxx) * var(--scale)); /* 22.62 */
+    
+        --xs: var(--scale);
+    
+        --s: calc(var(--scale) / var(--scale)); /* 1 */
+        --ss: calc(var(--s) / var(--scale)); /* 0.7 */
+        --sss: calc(var(--ss) / var(--scale)); /* 0.5 */
+        --ssss: calc(var(--sss) / var(--scale)); /* 0.35 */
+        --sssss: calc(var(--ssss) / var(--scale)); /* 0.25 */
+        --ssssss: calc(var(--sssss) / var(--scale)); /* 0.17 */
+        --sssssss: calc(var(--ssssss) / var(--scale)); /* 0.125 */
+    
+        --dimension: 0px;
+    
+    }
+    `;
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/lymnee/lymnee/lymnee.live.js"></script>
+    </body>
+    </html>
+     
+
+
+<h2>Extra Credit hw (not algebra)</h2>
+<img src="math1.jpg" width="500" height="" >
+
+</body>  
+
+
+
+
+
